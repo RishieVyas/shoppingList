@@ -43,6 +43,7 @@ header h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+  text-align: left;
 }
 
 .form-input-filter {
@@ -117,6 +118,10 @@ header h1 {
   padding: 10px 15px;
   margin: 0 5px 20px;
   font-weight: 700;
+}
+
+.edit-mode {
+  color: #ccc;
 }
 
 @media (max-width: 500px) {
