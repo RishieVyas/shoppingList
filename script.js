@@ -50,6 +50,21 @@ function clearAllItems() {
     resetUI();
 }
 
+function filterItems (e) {
+    const item = document.querySelectorAll('li') // The li tag elements
+    const text = e.target.value.toLowerCase(); // Captures the input
+    item.forEach(item => {
+        const itemName = item.firstChild.textContent.toLocaleLowerCase()
+        // If the text types is present in the name of the existing item text then will display else not
+        if(itemName.indexOf(text) !== -1){
+            item.style.display = 'flex'
+        }
+        else{
+            item.style.display = 'none'
+        }
+    })
+}
+
 function resetUI () {
     const item = document.querySelectorAll('li')
 
@@ -67,3 +82,4 @@ function resetUI () {
 itemForm.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem)
 itemClear.addEventListener('click', clearAllItems)
+itemFilter.addEventListener('input', filterItems)
