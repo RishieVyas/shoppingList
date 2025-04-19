@@ -1,10 +1,10 @@
 
 # Shopping List
 
-## CRUD Operations on items
+Shopping list application made with vanilla JS to get hands dirty on DOM Manipulation.
 
-## Filter Items
+## Functionalities
 
-## Add Local Storage
-
-## Deploy on Netlify
+1.) CRUD Operations on items
+2.) Filter Items
+3.) Add Local Storage
